@@ -3,12 +3,12 @@ description: 'ev registration details
 
   '
 tables:
-- name: EV_REGISTRATION_DETAILS
+- name: VALIDATED_EV_DATA
   description: Here is a concise business description for the table in two phrases or less Stores electric vehicle registration details including vehicle information and location data Supports analysis and reporting of electric vehicle adoption and usage
   base_table:
-    database: CTX_DEMO
-    schema: EV_DATA
-    table: EV_REGISTRATION_DETAILS
+    database: SNF_EV_DATA_DEMO
+    schema: EV_POPULATION_DATA
+    table: VALIDATED_EV_DATA
   dimensions:
   - name: FILE_NAME
     expr: FILE_NAME

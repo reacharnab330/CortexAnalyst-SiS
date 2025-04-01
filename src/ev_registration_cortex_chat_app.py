@@ -18,7 +18,7 @@ def send_message(prompt: str) -> dict:
                 ]
             }
         ],
-        "semantic_model_file": "@ctx_demo.ev_data.ctx/ev registration data_semantic_model_202503312000.yaml",
+        "semantic_model_file": "@SNF_EV_DATA_DEMO.EV_POPULATION_DATA.AZURE/ev registration data_semantic_model_202503312000.yaml",
     }
     resp = _snowflake.send_snow_api_request(
         "POST",
