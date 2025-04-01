@@ -1,0 +1,73 @@
+name: ev registration data
+description: 'ev registration details
+
+  '
+tables:
+- name: EV_REGISTRATION_DETAILS
+  description: Here is a concise business description for the table in two phrases or less Stores electric vehicle registration details including vehicle information and location data Supports analysis and reporting of electric vehicle adoption and usage
+  base_table:
+    database: CTX_DEMO
+    schema: EV_DATA
+    table: EV_REGISTRATION_DETAILS
+  dimensions:
+  - name: FILE_NAME
+    expr: FILE_NAME
+    description: File name associated with electric vehicle registration details
+    data_type: VARCHAR(16777216)
+  - name: VIN_1_10
+    expr: VIN_1_10
+    description: First 10 characters of Vehicle Identification Number
+    data_type: VARCHAR(16777216)
+  - name: COUNTY
+    expr: COUNTY
+    description: Identifies the county where an electric vehicle is registered
+    data_type: VARCHAR(16777216)
+  - name: CITY
+    expr: CITY
+    description: City where the electric vehicle is registered
+    data_type: VARCHAR(16777216)
+  - name: STATE
+    expr: STATE
+    description: State where the electric vehicle is registered
+    data_type: VARCHAR(16777216)
+  - name: POSTAL_CODE
+    expr: POSTAL_CODE
+    description: Postal code of the electric vehicle s registration location
+    data_type: VARCHAR(16777216)
+  - name: MAKE
+    expr: MAKE
+    description: Identifies the manufacturer of an electric vehicle
+    data_type: VARCHAR(16777216)
+  - name: MODEL
+    expr: MODEL
+    description: Model of electric vehicle
+    data_type: VARCHAR(16777216)
+  - name: ELECTRIC_VEHICLE_TYPE
+    expr: ELECTRIC_VEHICLE_TYPE
+    description: Identifies the type of electric vehicle such as battery electric or plug in hybrid
+    data_type: VARCHAR(16777216)
+  - name: CAFV_ELIGIBILITY
+    expr: CAFV_ELIGIBILITY
+    description: Indicates whether an electric vehicle is eligible for California Air Resources Board CARB funding and or incentives
+    data_type: VARCHAR(16777216)
+  - name: DOL_VEHICLE_ID
+    expr: DOL_VEHICLE_ID
+    description: Identifies a unique vehicle in the Department of Licensing database
+    data_type: VARCHAR(16777216)
+  - name: VEHICLE_LOCATION
+    expr: VEHICLE_LOCATION
+    description: Location of the electric vehicle
+    data_type: VARCHAR(16777216)
+  - name: ELECTRIC_UTILITY
+    expr: ELECTRIC_UTILITY
+    description: Identifies the electric utility company associated with an electric vehicle registration
+    data_type: VARCHAR(16777216)
+  - name: CENSUS_TRACT_2020
+    expr: CENSUS_TRACT_2020
+    description: Census tract identifier for the year 2020
+    data_type: VARCHAR(16777216)
+  measures:
+  - name: BASE_MSRP
+    expr: BASE_MSRP
+    description: Represents the base manufacturer s suggested retail price
+    data_type: FLOAT
