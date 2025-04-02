@@ -6,12 +6,12 @@ This is a Streamlit in Snowflake (SiS) based AI chatbot powered by Cortex Analys
 
 <img src="https://github.com/reacharnab330/CortexAnalyst-SiS/blob/main/data-flow.PNG">
 
-User Input: User types a question in the Streamlit chat interface (e.g., "How many EVs were registered in 2023?").
-Prompt Processing: process_message sends the prompt to send_message.
-Cortex Analyst API Call: send_message invokes the Cortex Analyst API, passing the prompt and semantic model.
-SQL Generation: Cortex Analyst uses the YAML to map the prompt to the underlying table and generates an SQL query (e.g., SELECT COUNT(*) FROM ev_registration_details WHERE model_year = '2023').
-SQL Execution: In display_content, the generated SQL is executed via session.sql(), querying the table in Snowflake.
-Results Display: The results are returned and displayed in Streamlit
+User Input: User types a question in the Streamlit chat interface (e.g., "How many EVs were registered in 2023?")  
+Prompt Processing: process_message sends the prompt to send_message  
+Cortex Analyst API Call: send_message invokes the Cortex Analyst API, passing the prompt and semantic model  
+SQL Generation: Cortex Analyst uses the YAML to map the prompt to the underlying table and generates an SQL query (e.g., SELECT COUNT(*) FROM ev_registration_details WHERE model_year = '2023')  
+SQL Execution: In display_content, the generated SQL is executed via session.sql(), querying the table in Snowflake  
+Results Display: The results are returned and displayed in Streamlit  
 
 # Project overview
 
